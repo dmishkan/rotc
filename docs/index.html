@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Revenge of the Orcs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #10454b;
+            color: #e9faeb;
+        }
+        .title {
+            width: 800px;
+            height: 50px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin: -25px 0 0 -400px;
+            font-size: 90px !important;
+            font-family: fantasy;
+            font-weight: bold;
+            color: #10454b !important;
+            text-shadow:
+            -1px -1px 0 #ffff,
+            1px -1px 0 #ffff,
+            -1px 1px 0 #ffff,
+            1px 1px 0 #ffff;           
+        }
+        .jumbotron {
+            margin-bottom: 100px;
+            background-image:url("BG.png");
+            height:1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom:2px solid #abe6b3;
+        }
+
+        .caption{
+            color: #FFD700
+         }
+        .play {
+
+            margin: 20px;
+            background-color: white;
+            border-color: #8f8f8f;
+            color: #8f8f8f;
+            bottom: 0;  
+            z-index: 100; 
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            color: #abe6b3;
+            font-family: fantasy;
+        }
+        .carousel-inner img {
+            width: 100%;
+            min-height: 200px;
+        }
+        @media (max-width: 600px) {
+        .carousel-caption {
+            display: none; 
+        }}
+        .carousel {
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .carousel-wrap{
+            padding: 50px;
+        }
+        .characters{
+            padding: 0 100px;
+            width: 70%;
+        }
+        .characters h3{
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        .characters img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 30px 0;
+        }
+        p {
+            font-size: 20px;
+        }
+        .characters .row {
+            margin: 60px 0;
+        }
+        .characters .col-sm-9 {
+            padding-top: 30px;
+        }
+        .gameplay-p{
+            padding: 50px 100px;
+        }
+        footer {
+            height: 70px;
+            text-align: center;
+        }
+        .gameplay {
+            text-align: center;
+            width: 70%;
+            margin: auto;
+        }
+        .github {
+            position:absolute;
+            top:0;
+            margin: 20px;
+            background-color: white;
+            border-color: #8f8f8f;
+            color: #8f8f8f;
+            z-index: 100; 
+        }
+    </style>
+</head>
+
+<body>
+    
+    <a class="btn btn-light github" href="https://github.com/Ohalawa1358/Orc_Game" role="button">GitHub</a>
+
+    <div class="jumbotron">
+         <h1 class="title">REVENGE OF THE ORC</h1>
+    </div>
+
+    <div>
+        <h2>Game Features</h2>
+        
+        <div class="carousel-wrap">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+      
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="spear_throw.png" alt="Image">
+                <div class="carousel-caption">
+                 <p class = "caption">Throwable spear to kill or use as platform</p>
+                </div>      
+              </div>
+      
+              <div class="item">
+                <img src="grunt_death.png" alt="Image">
+                <div class="carousel-caption"> 
+                 <p class = "caption">Killable enemies</p>
+                </div>      
+              </div>
+
+              <div class="item">
+                <img src="kill_knight.png" alt="Image">
+                <div class="carousel-caption">
+                 <p class = "caption">Battle bosses</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Gameplay</h2>
+        <div class="gameplay-p">   
+            <p class="gameplay">
+               You play as an Orc in this single-player platformer. After a knight destroys your village, it's up to you to avenge your people's death. Fight through persistant grunts who are our hunting weak monsters. 
+               Prove to them that you are not just any foe. Your journey ends only when you kill the knight who crumbled your life. With simple knockback combat, the orc wields a short spear and a throwing spear. 
+               Utilize both of these weapons as you traverse across pits, spikes, and other obstacles. Maybe your weapons can help you platform as well.
+            </p>
+            <br><br>
+            <center><iframe width="900" height="500" src="https://www.youtube.com/embed/Vs9DWziO_us" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+    </div>
+
+    <div>
+        <h2>Characters</h2>
+        <div class="container-fluid characters">
+        <div class="row content">
+            <div class="col-sm-9">
+                <h3>Orc</h3>
+                <p>Evil monster or vengeful hero? Only the seeing can foretell. Nobody chooses to be born an orc. Skillful in close melee and ranged combat, the orc wields spears. The orc's adaptability and toughness makes it a formitable species.</p>
+            </div>
+            <div class="col-sm-3">
+                <img style="float:right;" src="orc.png" alt="Orc">
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-sm-3">
+                <img src="grunt.png" alt="Grunt">
+            </div>
+            <div class="col-sm-9" style="text-align:right;">
+                <h3>Grunt</h3>
+                <p>Longing to wish a princess one day, he must survive the day, and that means purging the land of monsters. Wielding a sword, the knight has medium ranged melee attacks. They hope killing monster will promote them into knighthood.</p>
+            </div>
+        </div>
+        <div class="row content">  
+            <div class="col-sm-9">
+                <h3>Knight</h3>
+                <p>Thought as the heroes of the land by many, does he show courage or arrogance? Some of the best warriors in the land, the knight has many special attacks. He is confident and will ensure his attacks do not miss.</p>
+            </div>
+            <div class="col-sm-3">
+                <img style="float:right;" src="knight.png" alt="Knight">
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <a class="btn btn-light play" href="https://github.com/Ohalawa1358/Orc_Game" role="button">PLAY</a>
+    </footer>
+
+</body>
+
+</html>
